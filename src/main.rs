@@ -1,4 +1,4 @@
-#![allow(unused_variables)]
+// #![allow(unused_variables)]
 mod sh;
 use std::mem;
 use std::io::stdin;
@@ -64,8 +64,8 @@ use std::io::stdin;
 //     }
 //     let p1 = Point{x:1,y:0};
 //     let p2 = Point{x:0,y:100};
-//     let myline = Line{start:p1,end:p2};
-//     println!("my line is ({},{})",myline.start,myline.end);
+//     let my_line = Line{start:p1,end:p2};
+//     println!("my line is ({},{})",my_line.start,my_line.end);
 // }
 fn prime_number(number:&str){
     let mut count =0;
@@ -78,6 +78,7 @@ fn prime_number(number:&str){
         println!("Number {} is a prime number",number);
     }else{
         println!("Number {} is a not prime number",number);
+        // println!("{}",count);
     }
 }
 
@@ -90,7 +91,7 @@ fn main() {
     // print_my_name("UWENAYO Alain Pacifique");
     // version_control(VERSION);
     // others()
-    // sh::heap_and_stack_memory()
+    sh::heap_and_stack_memory();
     // while_loop();
     // match_statements();
     // structures();
